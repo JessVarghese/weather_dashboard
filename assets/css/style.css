@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body {
+    font-family: sans-serif;
+      
+}
+
+header {
+    vertical-align:middle;
+    padding: 20px 35px;
+    background-color: blue;
+    background-image: radial-gradient(rgb(3, 3, 41), rgb(92, 92, 210));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-size: cover;
+    background-position: 80%;
+    color: whitesmoke;
+    font-size: 30px;
+  }
+
+  #text-header {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-weight: bold;
+
+  }
+
+  

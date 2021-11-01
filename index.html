@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Weather Dashboard</title>
+</head>
+<div>
+    <header><p id="text-header">Weather Dashboard</p></header>
+</div>
+</html>
+<body>
+
+</body>
+    <main>
+        
+    <div class="container">
+            <div class="row row-cols-2 row-cols-lg-5">
+              <div class="col">
+                <h3 class="p-3 border bg-lightfs-3 fw-bold card-header">Search for a City:</h3>
+
+                <div class="input-group mb-3">
+                    <input type="text" id="cityInput" class="form-control" placeholder="Enter City">
+                    <div class="d-grid gap-2">
+                        <span class="input-group-btn d-flex">
+                            <button onclick="getCityInfo()" class="btn btn-info" type="button">Search</button>
+                        </span>
+                    
+            </div>
+        </div>
+        <div>
+            <div class="col-4 border border-dark border-top border-1"></div>
+            <h2 class="p-3">Cities:<span id="weather-search-term"></span><div>
+            <h2 id="cityName" class="col"></h2> 
+            
+        </div>
+
+            <div></div><div class="p-3 border bg-light">Custom column padding</div>
+    </div>     
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
