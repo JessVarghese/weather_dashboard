@@ -15,38 +15,83 @@
 <div>
     <header><p id="text-header">Weather Dashboard</p></header>
 </div>
-</html>
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h3 class="border bg-lightfs-3 fw-bold card-header">Search for a City:</h3>
+        <input type="text" id="cityInput" class="form-control" placeholder="Enter City">
+        <button onclick="getCityInfo()" class="btn btn-info" type="button">Search</button>
+        <div class="col-md-3 p-3">
+          <div class="row border border-dark border-top border-1"></div>
+          <h2>Cities:<span id="weather-search-term"></span><div>
+            <h2 id="cityName" class="col"></h2>
+      </div>
+     </div>
+  </div>
+<!--Current Weather-->
+    <div class="col-8 p-3 w-50">
+      <h2 id="weatherToday">Current Weather</h2>
+      <div id="currentDisplay">
+        <h1 id="name"></h1>
+        <p id="date"></p>
+        <p id="icon"></p>
+        <p id="temp"></p>
+        <p id="windSpeed"></p>
+        <p id="humidity"></p>
+      </div>
+     <!--5 Day Forecast--> 
+      <div class="row col-8 p-3" id="fiveDay">
+        <h2>5 Day Forecast</h2>
+        <div class="day1">
+          <p class="date1"></p>
+          <p class="temp1"></p>
+          <p class="wind1"></p>
+          <p class="humid1"></p>
+        </div>
+      </div>
+    </div>
+    
+  
+    
 
+
+<script src="./assets/js/script.js"></script>
 </body>
-    <main>
+
+</html> 
+
+
+
+
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3 class="p-3 border bg-lightfs-3 fw-bold card-header">Search for a City:</h3>
+      <div class="input-group mb-3">
+        <input type="text" id="cityInput" class="form-control" placeholder="Enter City">
+        <div class="d-grid gap-2">
+          <button onclick="getCityInfo()" class="btn btn-info" type="button">Search</button>
+        </div>
+      </div>
+        <div class="row border border-dark border-top border-1"></div>
+        <h2 class="col p-3">Cities:<span id="weather-search-term"></span><div>
+        <h2 id="cityName" class="col"></h2> 
+     </div>
+      
+     <div class="container">
+        <div class="weatherNow">
+          <h2 id="currentWeather">currentWeather</h2>
+        </div>
+        <div id="fiveDay">
+          <h2>5 Day Forecast</h2>
+        </div>
+      </div>
         
-    <div class="container">
-            <div class="row row-cols-2 row-cols-lg-5">
-              <div class="col">
-                <h3 class="p-3 border bg-lightfs-3 fw-bold card-header">Search for a City:</h3>
 
-                <div class="input-group mb-3">
-                    <input type="text" id="cityInput" class="form-control" placeholder="Enter City">
-                    <div class="d-grid gap-2">
-                        <span class="input-group-btn d-flex">
-                            <button onclick="getCityInfo()" class="btn btn-info" type="button">Search</button>
-                        </span>
-                    
-            </div>
-        </div>
-        <div>
-            <div class="col-4 border border-dark border-top border-1"></div>
-            <h2 class="p-3">Cities:<span id="weather-search-term"></span><div>
-            <h2 id="cityName" class="col"></h2> 
-            
-        </div>
-
-            <div></div><div class="p-3 border bg-light">Custom column padding</div>
-    </div>     
-    </main>
-
-    <script src="./assets/js/script.js"></script>
-</body>
-
-</html>
+     </div>
+      
+</div>   -->
