@@ -1,6 +1,24 @@
 var submitBtn = document.querySelector("button");
 submitBtn.addEventListener("click", getCityInfo);
 
+let currentDay = moment().format("L");
+document.getElementById("date").innerHTML = currentDay;
+
+let day1 = moment().add(1, 'd').format("L");
+document.getElementById("date1").innerHTML = day1;
+
+let day2 = moment().add(2, 'd').format("L");
+document.getElementById("date2").innerHTML = day2;
+
+let day3 = moment().add(3, 'd').format("L");
+document.getElementById("date3").innerHTML = day3;
+
+let day4 = moment().add(4, 'd').format("L");
+document.getElementById("date4").innerHTML = day4;
+
+let day5 = moment().add(5, 'd').format("L");
+document.getElementById("date5").innerHTML = day5;
+
 
 function getCityInfo() {
   event.preventDefault();
@@ -45,7 +63,7 @@ function getCityInfo() {
         "Temp: " + Number(data.current.temp).toFixed(1) + "°"; 
       document.getElementById("humidity").innerHTML = "Humidity: " + Number(data.current.humidity).toFixed(1)+"%";
       document.getElementById("windSpeed").innerHTML = "Wind: " + Number(data.current.wind_speed).toFixed(1)+" MPH";
-      document.getElementById("date").innerHTML = "Date: " + (data.current.dt);
+      currentDay = "Date: " + (data.current.dt);
       document.getElementById("uvi").innerHTML = "UV Index: " + (data.current.uvi);
 
 
@@ -58,7 +76,7 @@ function getCityInfo() {
         "Temp: " + Number(data.daily[1].temp.day).toFixed(1) + "°"; 
       document.getElementById("humid1").innerHTML = "Humidity: " + Number(data.daily[1].humidity).toFixed(1)+"%";
       document.getElementById("wind1").innerHTML = "Wind: " + Number(data.daily[1].wind_speed).toFixed(1)+" MPH";
-      document.getElementById("date1").innerHTML = "Date: " + (data.daily[1].dt);
+      day1 = "Date: " + (data.daily[1].dt);
       document.getElementById("uvi1").innerHTML = "UV Index: " + (data.daily[1].uvi);
 
 
@@ -68,7 +86,6 @@ function getCityInfo() {
         "Temp: " + Number(data.daily[2].temp.day).toFixed(1) + "°"; 
       document.getElementById("humid2").innerHTML = "Humidity: " + Number(data.daily[2].humidity).toFixed(1)+"%";
       document.getElementById("wind2").innerHTML = "Wind: " + Number(data.daily[2].wind_speed).toFixed(1)+" MPH";
-      document.getElementById("date2").innerHTML = "Date: " + (data.daily[2].dt);
       document.getElementById("uvi2").innerHTML = "UV Index: " + (data.daily[2].uvi);
 
       
@@ -78,7 +95,6 @@ function getCityInfo() {
         "Temp: " + Number(data.daily[3].temp.day).toFixed(1) + "°"; 
       document.getElementById("humid3").innerHTML = "Humidity: " + Number(data.daily[3].humidity).toFixed(1)+"%";
       document.getElementById("wind3").innerHTML = "Wind: " + Number(data.daily[3].wind_speed).toFixed(1)+" MPH";
-      document.getElementById("date3").innerHTML = "Date: " + (data.daily[3].dt);
       document.getElementById("uvi3").innerHTML = "UV Index: " + (data.daily[3].uvi);
 
 
@@ -88,7 +104,6 @@ function getCityInfo() {
         "Temp: " + Number(data.daily[4].temp.day).toFixed(1) + "°"; 
       document.getElementById("humid4").innerHTML = "Humidity: " + Number(data.daily[4].humidity).toFixed(1)+"%";
       document.getElementById("wind4").innerHTML = "Wind: " + Number(data.daily[4].wind_speed).toFixed(1)+" MPH";
-      document.getElementById("date4").innerHTML = "Date: " + (data.daily[4].dt);
       document.getElementById("uvi4").innerHTML = "UV Index: " + (data.daily[4].uvi);
 
       $("#wicon5").html("<img src='http://openweathermap.org/img/w/" + data.daily[4].weather[0].icon + ".png'>"); 
@@ -97,7 +112,6 @@ function getCityInfo() {
         "Temp: " + Number(data.daily[5].temp.day).toFixed(1) + "°"; 
       document.getElementById("humid5").innerHTML = "Humidity: " + Number(data.daily[5].humidity).toFixed(1)+"%";
       document.getElementById("wind5").innerHTML = "Wind: " + Number(data.daily[5].wind_speed).toFixed(1)+" MPH";
-      document.getElementById("date5").innerHTML = "Date: " + (data.daily[5].dt);
       document.getElementById("uvi5").innerHTML = "UV Index: " + (data.daily[5].uvi);
 
 })
