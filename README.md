@@ -28,7 +28,7 @@ gh repo clone JessVarghese/weather_dashboard.
 
 The following third-party applications were used as a part of this project:
 
-* [jQuery](https://jquery.com/
+* [jQuery](https://jquery.com/)
 * [Moment.js](https://momentjs.com/docs/)
 * [Bulma](https://bulma.io/)
 
@@ -36,7 +36,7 @@ The following third-party applications were used as a part of this project:
 ## Usage
 
 
-![visuals]()
+![visuals](https://github.com/JessVarghese/weather_dashboard/blob/main/assets/images/weather_dashboard.png)
 
 
 ## License
