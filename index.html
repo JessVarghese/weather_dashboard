@@ -33,7 +33,7 @@
             </div>
 
             <form action="submit" method="post">
-              <div class="form-group">
+              <div class="form-group row justify-content-center">
                 <input type="text" id="cityInput" class="form-control" placeholder="ex. Austin">
                 <button class="btn btn-info m-3" type="button" onclick="displayDivs()">Search</button>
               </div>
@@ -57,17 +57,18 @@
   <div class="container px-2 text-center">
     <div class="row align-items-start gx-5">
 
-      <div class="col m-3" id="search-history" style="display:none">
-        <h3 id="weather-search-term">Recently Searched Cities:</h3>
-        <h4 id="cityName"></h4>
+      <div class="col m-3" id="search-history" style="display:block">
+        <h6 id="weather-search-term">Recently Searched Cities:</h6>
+        <h6 id="cityName"></h6>
         <ul id="searchHistory"></ul>
       </div>
+    </div>
+  </div>
 
 
 
-      <div class="container px-2 text-center">
-        <div class="row align-items-center gx-5">
-        </div>
+
+      
 
 
 
@@ -77,9 +78,9 @@
 
         <!--5 Day Forecast-->
 
-        <div class="container text-center" id="search-results" style="display:none">
+        <div class="container text-center" id="search-results" style="display:block">
           <div class="row justify-content-center">
-            <div class="col m-3 text-center" id="current-weather" style="display:none">
+            <div class="col m-3 text-center" id="current-weather" style="display:block">
               <h3>Current Weather</h3>
               <h3 id="weatherToday"></h3>
               <p id="date"></p>
