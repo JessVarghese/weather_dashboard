@@ -10,6 +10,8 @@ body {
   background-color: #808bb9;
 }
 
+
+
 header {
     vertical-align:middle;
     padding: 20px 35px;
@@ -40,7 +42,7 @@ header {
   }
 
 
- #search-history, #current-weather, #search-results {
+  #search-results {
   border: 5px solid black;
 }
 
