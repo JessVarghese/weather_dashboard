@@ -41,6 +41,9 @@ header {
     text-align: center;
   }
 
+  .btn {
+    background-color: #17445c;
+  }
 
   #search-results {
   border: 3px solid black;
