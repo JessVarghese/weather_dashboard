@@ -20,8 +20,9 @@ let day5 = moment().add(5, 'd').format("L");
 document.getElementById("date5").innerHTML = day5;
 
 
+//Displays the divs only after search is triggered
 function displayDivs() {
-  //hides the intro container
+  
   document.getElementById("search-history").style.display = "block";
 
   document.getElementById("search-results").style.display = "block";
@@ -34,7 +35,7 @@ function displayDivs() {
 
 
 
-
+//Return city weather info based on search input
 
 function getCityInfo() {
   event.preventDefault();
@@ -135,6 +136,7 @@ function getCityInfo() {
 
 };
 
+//Trigger the enter key to return results if hit
 
 var el = document.getElementById("cityInput");
 el.addEventListener("keydown", function(event) {
