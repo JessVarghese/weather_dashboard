@@ -29,7 +29,11 @@ function displayDivs() {
 
 
   getCityInfo();
-}
+};
+
+
+
+
 
 
 function getCityInfo() {
@@ -130,3 +134,11 @@ function getCityInfo() {
 
 
 };
+
+
+var el = document.getElementById("cityInput");
+el.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        displayDivs();
+    }
+});
