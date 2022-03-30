@@ -20,6 +20,18 @@ let day5 = moment().add(5, 'd').format("L");
 document.getElementById("date5").innerHTML = day5;
 
 
+function displayDivs() {
+  //hides the intro container
+  document.getElementById("search-history").style.display = "block";
+
+  document.getElementById("search-results").style.display = "block";
+  document.getElementById("current-weather").style.display = "block";
+
+
+  getCityInfo();
+}
+
+
 function getCityInfo() {
   event.preventDefault();
   let cityInput = document.getElementById("cityInput");
@@ -27,7 +39,7 @@ function getCityInfo() {
   cityName.innerHTML = "" + cityInput.value + "";
 
   document.getElementById("weatherToday").innerHTML = "" + cityInput.value + "";
-
+  
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       cityInput.value +
@@ -118,4 +130,3 @@ function getCityInfo() {
 
 
 };
-

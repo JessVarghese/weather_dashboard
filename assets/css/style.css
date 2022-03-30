@@ -40,7 +40,7 @@ header {
   }
 
 
-#city-search, #search-history {
+ #search-history, #current-weather, #search-results {
   border: 5px solid black;
 }
 
