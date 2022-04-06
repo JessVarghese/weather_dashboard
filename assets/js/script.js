@@ -41,9 +41,12 @@ function getCityInfo() {
   event.preventDefault();
   let cityInput = document.getElementById("cityInput");
   let cityName = document.getElementById("cityName");
-  cityName.innerHTML = "" + cityInput.value + "";
-
+ 
   document.getElementById("weatherToday").innerHTML = "" + cityInput.value + "";
+
+  window.localStorage.setItem('cityInput', cityInput.value);
+  window.localStorage.getItem('cityInput');
+  
   
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -143,4 +146,10 @@ el.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         displayDivs();
     }
+
 });
+
+
+
+
+
